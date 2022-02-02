@@ -13,7 +13,7 @@
   <meta property="og:image:height" content="630">
   
   <style>
-    img {
+    input {
     width: 900px;
     height: 1300px;
     }
@@ -25,7 +25,13 @@
   </br></br></br></br></br>
   
   <p>퍼즐 완성!</p>
-  <img id="clock_img" src="thumbs_up.jpg" />
+  <input id="clock_img" type="image" src="thumbs_up.jpg" onclick="mouseUp()"/>
+
+  <script>
+    function mouseUp() {
+      document.getElementById("clock_img").src = "제이하트.png";
+    }
+  </script>
   
   </br></br></br></br></br>
     
