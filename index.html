@@ -29,8 +29,12 @@
 
   <script>
 
-    const image = document.getElementById('end_img');
-    image.addEventListener('click', (event) => {
+    const div = document.getElementById('end_img');
+    div.addEventListener('mouseup', (event) => {
+      document.body.style.background = "url('Jheart-background.png') no-repeat 0 0";
+    });
+
+    div.addEventListener("touchend", (event) => {
       document.body.style.background = "url('Jheart-background.png') no-repeat 0 0";
     });
 
